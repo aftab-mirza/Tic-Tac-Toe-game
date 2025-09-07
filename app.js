@@ -25,19 +25,19 @@ msgContainer.classList.add("hide");
 
 boxes.forEach((box) =>{
     box.addEventListener("click", () => {
-    if (turnO) {
-        //playerO
-        box.innerText = "O";
-        turnO = false;
-    } else {
-        //playerX
-        box.innerText = "X";
-        turnO = true;
-    }
-    box.disable = true;
+        if (turnO) {
+            //playerO
+            box.innerText = "O";
+            turnO = false;
+        } else {
+            //playerX
+            box.innerText = "X";
+            turnO = true;
+        }
+        box.disabled = true; // <-- fix here
 
-    checkWinner();
-});
+        checkWinner();
+    });
 });
 
 const disableBoxes = () => {
@@ -54,7 +54,7 @@ const enableBoxes = () => {
 };
 
 const showWinner = (winner) => {
-    msg.innerText = 'Congratulations, Winner is ${winner}';
+    msg.innerText = `Congratulations, Winner is ${winner}`;
     msgContainer.classList.remove("hide");
 };
 
