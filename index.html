@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- follow BEM standards for class names and css -->
     <div class="msg-container hide">
         <p id="msg">Winnner</p>
         <button id="new-btn">New Game</button>
@@ -14,25 +17,31 @@
     <main>
         <h1>Tic Tac Toe</h1>
         <div class="container">
-        <div class="game">
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
+            <div class="game">
+
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+
+                    <button class="box"></button>
+                    <button class="box"></button>
+
+            </div>
         </div>
         </div>
         <button id="reset-btn">Reset Game</button>
 
     </main>
-        <div class="container text-center mt-4 mb-0">
-        <h5>Made With &#128154; By Aftab Mirza</h5>
-        </div>
+    <div class="container text-center mt-4 mb-0">
+        <h5>Made With &#128153; By Aftab Mirza</h5>
+    </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>
